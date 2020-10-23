@@ -6,6 +6,7 @@ function testFunc() {
 
 function superbowlWin(object)
 {
-  const year = object.find(obj => {if(obj["result"]==="W"){return obj["year"]}});
-  return year
+  const model = object.find(obj => {if(obj["result"]==="W"){return obj["year"]}});
+  if(model){return model.year;}
+  else{ return model;}
 }
